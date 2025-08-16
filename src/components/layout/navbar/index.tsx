@@ -1,7 +1,7 @@
 import Image from "next/image";
 import UserHeader from "./user-header";
-import { HoverPopover } from "@/components/custom";
 import NavCalendar from "./nav-calendar";
+import NavBudgeting from "./nav-budgeting";
 
 const Navbar = () => {
   return (
@@ -9,7 +9,7 @@ const Navbar = () => {
       <Image src="logo.svg" alt="Logo" width={154} height={26} />
       <div className="flex items-center gap-[1.5625rem]">
         <ul className="flex items-center gap-6">
-          <li className="">
+          <li className="cursor-not-allowed">
             <Image
               src="/layout/icons/Notification.svg"
               alt="Notification"
@@ -18,29 +18,12 @@ const Navbar = () => {
             />
           </li>
           <li className="">
-            <HoverPopover
-              hoverXOffset={70}
-              hoverYOffset={-50}
-              trigger={
-                <Image
-                  src="/layout/icons/Budgeting.svg"
-                  alt="Budgeting"
-                  width={32}
-                  height={32}
-                />
-              }
-              hoverContent={
-                <div className="py-2 px-3 mt-2 rounded-lg bg-[#18181B] text-white text-[10px]/[150%] font-dm-sans">
-                  Budgeting
-                </div>
-              }
-              popoverContent={<div>Budgeting Popover</div>}
-            />
+            <NavBudgeting />
           </li>
           <li>
             <NavCalendar />
           </li>
-          <li>
+          <li className="cursor-not-allowed">
             <Image
               src="/layout/icons/message.svg"
               alt="Message"

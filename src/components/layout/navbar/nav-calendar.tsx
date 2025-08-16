@@ -5,6 +5,7 @@ import { useState } from "react";
 
 const NavCalendar = () => {
   const [date, setDate] = useState<Date | undefined>(new Date());
+
   return (
     <div>
       <HoverPopover
@@ -24,12 +25,17 @@ const NavCalendar = () => {
           </div>
         }
         popoverContent={
-          <Calendar
-            mode="single"
-            defaultMonth={date}
-            selected={date}
-            onSelect={setDate}
-          />
+          <div className="bg-[#0D0D0D] text-[#969696] mt-4">
+            <Calendar
+              mode="single"
+              defaultMonth={date}
+              selected={date}
+              onSelect={setDate}
+              classNames={{
+                selected: `bg-blue-500 text-white`, // Highlight the selected day
+              }}
+            />
+          </div>
         }
       />
     </div>

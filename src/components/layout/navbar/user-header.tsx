@@ -9,7 +9,7 @@ const UserHeader = () => {
         hoverYOffset={-30}
         hoverXOffset={70}
         trigger={
-          <Avatar className="size-10">
+          <Avatar className="size-10 hover:bg-white box-content border-4 border-transparent hover:border-white transition-all duration-300">
             <AvatarImage src={user?.avatar} />
             <AvatarFallback className="bg-white text-black text-[23px]/[130%] font-medium font-dm-sans">
               {user?.name[0]}
@@ -17,12 +17,27 @@ const UserHeader = () => {
           </Avatar>
         }
         hoverContent={
-          <div className="w-48 mt-2 p-4 rounded-lg bg-gray-300 text-black font-dm-sans border-none outline-none">
+          <div className="w-48 mt-2 p-4 rounded-lg bg-gray-100 text-black shadow-sm font-dm-sans border-none outline-none">
             <p className="text-[20px] font-semibold">{user?.name}</p>
             <p className="text-base">{user?.email}</p>
           </div>
         }
-        popoverContent={<div>Place content for the popover here.</div>}
+        popoverContent={
+          <div className="w-[350px] min-h-[500px] bg-white shadow-xl mt-2 mr-20 text-black p-4 rounded-lg  font-dm-sans border-none outline-none">
+            <div className="w-full border border-gray-300 p-4 rounded-lg flex items-center gap-4">
+              <Avatar className="size-10">
+                <AvatarImage src={user?.avatar} />
+                <AvatarFallback className="bg-green-800 text-white text-[23px]/[130%] font-medium font-dm-sans">
+                  {user?.name[0]}
+                </AvatarFallback>
+              </Avatar>
+              <div>
+                <p className="text-[20px] font-semibold">{user?.name}</p>
+                <p className="text-base">{user?.email}</p>
+              </div>
+            </div>
+          </div>
+        }
       />
     </div>
   );
