@@ -3,14 +3,18 @@
 
 :root {
   --dark: #191919;
+  --light-grey: #F4F4F5;
   --mid-grey: #606060;
+  --semi-grey: #919191;
   --dark-grey: #18181B;
 }
 
 @theme {
   /* color */
   --color-dark: var(--dark);
+  --color-light-grey: var(--light-grey);
   --color-mid-grey: var(--mid-grey);
+  --color-semi-grey: var(--semi-grey);
   --color-dark-grey: var(--dark-grey);
 
   /* font */
