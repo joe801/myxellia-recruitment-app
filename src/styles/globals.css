@@ -6,7 +6,9 @@
   --light-grey: #f4f4f5;
   --mid-grey: #606060;
   --semi-grey: #919191;
+  --deep-grey: #3D3D3D;
   --dark-grey: #18181b;
+  --error-main: #F04438;
 }
 
 @theme {
@@ -15,7 +17,9 @@
   --color-light-grey: var(--light-grey);
   --color-mid-grey: var(--mid-grey);
   --color-semi-grey: var(--semi-grey);
+  --color-deep-grey: var(--deep-grey);
   --color-dark-grey: var(--dark-grey);
+  --color-error-main: var(--error-main);
 
   /* font */
   --font-dm-sans: var(--font-dm-sans);
