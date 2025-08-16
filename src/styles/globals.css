@@ -3,10 +3,10 @@
 
 :root {
   --dark: #191919;
-  --light-grey: #F4F4F5;
+  --light-grey: #f4f4f5;
   --mid-grey: #606060;
   --semi-grey: #919191;
-  --dark-grey: #18181B;
+  --dark-grey: #18181b;
 }
 
 @theme {
@@ -23,6 +23,6 @@
 
 .rdp-root {
   --rdp-accent-color: #969696; /* Change the accent color to indigo. */
-  --rdp-accent-background-color: #0D0D0D; /* Change the accent background color. */
+  --rdp-accent-background-color: #0d0d0d; /* Change the accent background color. */
   --rdp-today-color: blue;
 }

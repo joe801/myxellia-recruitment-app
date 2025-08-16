@@ -1,2 +1,1 @@
-export { default } from '@/modules/dashboard';
-
+export { default } from "@/modules/dashboard";
