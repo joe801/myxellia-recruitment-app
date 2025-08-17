@@ -1,6 +1,7 @@
 export const user = {
   id: "12345",
-  name: "Dylan Frank",
+  firstName: "Dylan",
+  lastName: "Frank",
   email: "dylan96@mail.com",
   avatar: "",
 };

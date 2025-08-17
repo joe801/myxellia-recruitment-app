@@ -18,7 +18,7 @@ const SalesOverview = () => {
           </div>
           <Button
             variant="outline"
-            className="rounded-full p-4 text-xs/[100%] font-medium text-center cursor-not-allowed"
+            className="rounded-full p-4 w-[11.0625rem] h-[2.875rem] text-xs/[100%] font-medium text-center cursor-not-allowed"
           >
             View Transactions
           </Button>

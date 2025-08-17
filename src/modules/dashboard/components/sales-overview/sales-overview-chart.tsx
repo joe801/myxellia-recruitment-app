@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import {
   BarChart,
@@ -10,7 +11,14 @@ import {
 
 const SalesOverviewChart = () => {
   return (
-    <div>
+    <div className="relative">
+      <Image
+        src="/dashboard/icons/prev.svg"
+        alt="prev"
+        width={18}
+        height={18}
+        className="absolute left-0 top-1/2 transform -translate-y-1/2 cursor-not-allowed"
+      />
       <div style={{ width: "100%", height: "163px" }}>
         <ResponsiveContainer width="100%" height="100%">
           <BarChart
@@ -65,6 +73,13 @@ const SalesOverviewChart = () => {
           </BarChart>
         </ResponsiveContainer>
       </div>
+      <Image
+        src="/dashboard/icons/next.svg"
+        alt="next"
+        width={18}
+        height={18}
+        className="absolute right-2 top-1/2 transform -translate-y-1/2 cursor-not-allowed"
+      />
     </div>
   );
 };

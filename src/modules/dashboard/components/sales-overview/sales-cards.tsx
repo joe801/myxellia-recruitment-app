@@ -7,7 +7,7 @@ const SalesCard = () => {
       {cardData.map((card, index) => (
         <div
           key={index}
-          className="bg-white shadow-md border border-light-grey rounded-xl p-4 space-y-2 font-dm-sans"
+          className="bg-white shadow-sm border border-light-grey rounded-xl p-4 space-y-2 font-dm-sans"
         >
           <h3 className={`text-[19px]/[130%] font-semibold ${card.color}`}>
             {card.price}

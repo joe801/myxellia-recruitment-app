@@ -58,7 +58,7 @@ const DashboardNav = () => {
         <Search size={24} color="#606060" />
         <input
           type="text"
-          className="outline-none border-none text-semi-grey font-dm-sans"
+          className="w-full outline-none border-none text-semi-grey font-dm-sans"
           placeholder="Search listings, users here..."
         />
       </div>
