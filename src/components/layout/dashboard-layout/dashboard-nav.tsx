@@ -16,9 +16,9 @@ const DashboardNav = () => {
   const pathname = usePathname();
 
   return (
-    <Section className="border-b border-light-grey bg-white flex items-center justify-between">
+    <Section className="border-b border-light-grey bg-white flex items-center justify-between flex-col xl:flex-row gap-6 lg:gap-0">
       <NavigationMenu>
-        <NavigationMenuList className="flex flex-row gap-6">
+        <NavigationMenuList className="flex flex-wrap xl:flex-nowrap justify-center sm:justify-start flex-row gap-6">
           {NavItem.map((item) => {
             const isActive = pathname === item.path;
             return (
@@ -26,7 +26,7 @@ const DashboardNav = () => {
                 <NavigationMenuLink
                   asChild
                   className={clsx(
-                    "w-[170px] h-[38px] rounded-lg flex items-center justify-center",
+                    "w-[10.625rem] h-[2.375rem] rounded-lg flex items-center justify-center",
                     isActive && " bg-light-grey text-dark font-bold ",
                   )}
                 >
@@ -54,7 +54,7 @@ const DashboardNav = () => {
           })}
         </NavigationMenuList>
       </NavigationMenu>
-      <div className="flex w-[319px] items-center gap-2 bg-light-grey rounded-xl px-4 py-2">
+      <div className="self-end xl:self-auto flex w-full md:w-[19.9375rem] items-center gap-2 bg-light-grey rounded-xl px-4 py-2">
         <Search size={24} color="#606060" />
         <input
           type="text"

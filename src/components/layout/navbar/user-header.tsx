@@ -18,12 +18,14 @@ const UserHeader = () => {
         }
         hoverContent={
           <div className="w-48 mt-2 p-4 rounded-lg bg-gray-100 text-black shadow-sm font-dm-sans border-none outline-none">
-            <p className="text-[20px] font-semibold">{user?.firstName} {user?.lastName}</p>
+            <p className="text-[20px] font-semibold">
+              {user?.firstName} {user?.lastName}
+            </p>
             <p className="text-base">{user?.email}</p>
           </div>
         }
         popoverContent={
-          <div className="w-[350px] min-h-[500px] bg-white shadow-xl mt-2 mr-20 text-black p-4 rounded-lg  font-dm-sans border-none outline-none">
+          <div className="w-[250px] sm:w-[350px] min-h-[500px] bg-white shadow-xl mt-2 mr-20 text-black p-4 rounded-lg  font-dm-sans border-none outline-none">
             <div className="w-full border border-gray-300 p-4 rounded-lg flex items-center gap-4">
               <Avatar className="size-10">
                 <AvatarImage src={user?.avatar} />
@@ -32,7 +34,9 @@ const UserHeader = () => {
                 </AvatarFallback>
               </Avatar>
               <div>
-                <p className="text-[20px] font-semibold">{user?.firstName} {user?.lastName}</p>
+                <p className="text-[20px] font-semibold">
+                  {user?.firstName} {user?.lastName}
+                </p>
                 <p className="text-base">{user?.email}</p>
               </div>
             </div>
