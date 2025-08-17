@@ -23,7 +23,7 @@ const UserHeader = () => {
           </div>
         }
         popoverContent={
-          <div className="w-[350px] min-h-[500px] bg-white shadow-xl mt-2 mr-20 text-black p-4 rounded-lg  font-dm-sans border-none outline-none">
+          <div className="w-[250px] sm:w-[350px] min-h-[500px] bg-white shadow-xl mt-2 mr-20 text-black p-4 rounded-lg  font-dm-sans border-none outline-none">
             <div className="w-full border border-gray-300 p-4 rounded-lg flex items-center gap-4">
               <Avatar className="size-10">
                 <AvatarImage src={user?.avatar} />

@@ -3,7 +3,7 @@ import CarouselCard from "./carousel-card";
 
 const NewsCards = () => {
   return (
-    <div className="w-full grid grid-cols-3 gap-4 relative">
+    <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-4 relative">
       <CarouselCard carouselData={carouselData1} />
       <CarouselCard carouselData={carouselData2} />
       <CarouselCard carouselData={carouselData3} />

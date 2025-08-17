@@ -6,8 +6,8 @@ import SalesCard from "./sales-cards";
 const SalesOverview = () => {
   return (
     <div className="rounded-2xl bg-white border border-[#E4E4E4]">
-      <div className="py-4 px-[22px] border-b border-light-grey">
-        <div className="flex items-end justify-between mb-4 font-dm-sans">
+      <div className="py-4 p-2 sm:px-[22px] border-b border-light-grey">
+        <div className="flex flex-col md:flex-row md:items-end gap-y-4 justify-between mb-4 font-dm-sans">
           <div className="space-y-2">
             <h4 className="text-dark text-xl/[100%] font-semibold">
               Sales Overview
@@ -23,9 +23,9 @@ const SalesOverview = () => {
             View Transactions
           </Button>
         </div>
-        <div className="w-full flex justify-end ">
+        <div className="w-full flex sm:justify-end ">
           <Tabs defaultValue="year">
-            <TabsList className="flex items-center gap-3">
+            <TabsList className="flex items-center gap-0 sm:gap-3">
               {tabsData.map((tab) => (
                 <TabsTrigger
                   key={tab.value}
@@ -39,7 +39,7 @@ const SalesOverview = () => {
           </Tabs>
         </div>
       </div>
-      <div className="grid grid-cols-2 py-4 px-[22px]">
+      <div className="grid grid-cols-1 xl:grid-cols-2 py-4 px-[22px]">
         <SalesOverviewChart />
         <SalesCard />
       </div>

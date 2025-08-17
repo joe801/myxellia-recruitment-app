@@ -7,7 +7,7 @@ const OverviewCards = () => {
       {data.map((card, index) => (
         <div
           key={index}
-          className="rounded-2xl border border-light-grey bg-white font-dm-sans"
+          className="rounded-2xl border shadow-sm border-light-grey bg-white font-dm-sans"
         >
           <div className="border-b-[0.5px] rounded-t-2xl border-[#E4E4E4] bg-[#F9FAFB] px-4 py-3 flex justify-between items-center">
             <div className="flex items-center gap-2.5">
