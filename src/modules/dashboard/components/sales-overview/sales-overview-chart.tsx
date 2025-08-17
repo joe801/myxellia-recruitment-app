@@ -53,19 +53,19 @@ const SalesOverviewChart = () => {
               }}
             />
             <Bar
-              dataKey="series1"
+              dataKey="total_inflow"
               fill="#4F46E5"
               radius={[2, 2, 0, 0]}
               maxBarSize={20}
             />
             <Bar
-              dataKey="series2"
+              dataKey="MRR"
               fill="#10B981"
               radius={[2, 2, 0, 0]}
               maxBarSize={20}
             />
             <Bar
-              dataKey="series3"
+              dataKey="GMV"
               fill="#EF4444"
               radius={[2, 2, 0, 0]}
               maxBarSize={20}
@@ -89,56 +89,56 @@ export default SalesOverviewChart;
 const data = [
   {
     name: "Jan",
-    series1: 35,
-    series2: 27,
-    series3: 9,
+    total_inflow: 35,
+    MRR: 27,
+    GMV: 9,
   },
   {
     name: "Feb",
-    series1: 5,
-    series2: 27,
-    series3: 9,
+    total_inflow: 5,
+    MRR: 27,
+    GMV: 9,
   },
   {
     name: "Mar",
-    series1: 14,
-    series2: 6,
-    series3: 3,
+    total_inflow: 14,
+    MRR: 6,
+    GMV: 3,
   },
   {
     name: "Apr",
-    series1: 14,
-    series2: 25,
-    series3: 9,
+    total_inflow: 14,
+    MRR: 25,
+    GMV: 9,
   },
   {
     name: "May",
-    series1: 9,
-    series2: 2,
-    series3: 6,
+    total_inflow: 9,
+    MRR: 2,
+    GMV: 6,
   },
   {
     name: "Jun",
-    series1: 36,
-    series2: 48,
-    series3: 6,
+    total_inflow: 36,
+    MRR: 48,
+    GMV: 6,
   },
   {
     name: "Jul",
-    series1: 23,
-    series2: 36,
-    series3: 17,
+    total_inflow: 23,
+    MRR: 36,
+    GMV: 17,
   },
   {
     name: "Aug",
-    series1: 23,
-    series2: 5,
-    series3: 17,
+    total_inflow: 23,
+    MRR: 5,
+    GMV: 17,
   },
   {
     name: "Sep",
-    series1: 36,
-    series2: 33,
-    series3: 5,
+    total_inflow: 36,
+    MRR: 33,
+    GMV: 5,
   },
 ];

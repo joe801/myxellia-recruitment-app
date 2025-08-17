@@ -18,7 +18,9 @@ const UserHeader = () => {
         }
         hoverContent={
           <div className="w-48 mt-2 p-4 rounded-lg bg-gray-100 text-black shadow-sm font-dm-sans border-none outline-none">
-            <p className="text-[20px] font-semibold">{user?.firstName} {user?.lastName}</p>
+            <p className="text-[20px] font-semibold">
+              {user?.firstName} {user?.lastName}
+            </p>
             <p className="text-base">{user?.email}</p>
           </div>
         }
@@ -32,7 +34,9 @@ const UserHeader = () => {
                 </AvatarFallback>
               </Avatar>
               <div>
-                <p className="text-[20px] font-semibold">{user?.firstName} {user?.lastName}</p>
+                <p className="text-[20px] font-semibold">
+                  {user?.firstName} {user?.lastName}
+                </p>
                 <p className="text-base">{user?.email}</p>
               </div>
             </div>
