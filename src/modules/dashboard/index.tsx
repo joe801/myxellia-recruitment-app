@@ -2,6 +2,7 @@ import DashboardLayout from "@/components/layout/dashboard-layout";
 import SalesOverview from "./components/sales-overview";
 import { user } from "@/hooks/auth";
 import OverviewCards from "./components/overview-cards";
+import NewsCards from "./components/news-cards";
 
 const Dashboard = () => {
   return (
@@ -15,6 +16,9 @@ const Dashboard = () => {
         </div>
         <div>
           <OverviewCards />
+        </div>
+        <div className="col-span-3">
+          <NewsCards />
         </div>
       </div>
     </DashboardLayout>

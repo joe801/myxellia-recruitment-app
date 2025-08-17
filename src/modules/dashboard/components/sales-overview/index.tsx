@@ -5,7 +5,7 @@ import SalesCard from "./sales-cards";
 
 const SalesOverview = () => {
   return (
-    <div className="rounded-2xl bg-white shadow-md border border-[#E4E4E4]">
+    <div className="rounded-2xl bg-white border border-[#E4E4E4]">
       <div className="py-4 px-[22px] border-b border-light-grey">
         <div className="flex items-end justify-between mb-4 font-dm-sans">
           <div className="space-y-2">
